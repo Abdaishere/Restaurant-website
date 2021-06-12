@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <div class="links">
+    <ul>
+        <li><p>Blog</p></li>
+        <li><p>Menu</p></li>
+        <li><p>Gallery</p></li>
+        <li><p>Contacts</p></li>
+        <li><p>About</p></li>
+        <li><p>Home</p></li>
+    </ul>
+</div>
+    <div class="center">
+        <h1>French Restaurant</h1>
+        <h2>We’re the best restaurant in town</h2>
+        <div>
+        <button type="button" onclick="About()">Learn More</button>
+        <button onclick="location.href='Booking.html'">Book A Visit</button>
+        </div>
+    </div>
+</div>
+<div id="A"></div>
+<script>
+    function About() {
+        var About = new XMLHttpRequest();
+        About.onreadystatechange = function(){
+            if (this.readyState == 4 && this.status == 200){
+                document.getElementById("A").innerHTML = this.responseText;
+            }
+        };
+        About.open("GET","learn.html",true);
+        About.send();
+}
+</script>
+</body>
+</html>

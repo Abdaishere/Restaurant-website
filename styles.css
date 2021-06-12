@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Pacifico&display=swap');
+body {
+    background-image: url("home.jpg");
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(77, 77, 77);
+}
+.links{
+    margin: -10px;
+    padding: -10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.links li{
+    float:right;
+}
+.links p{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2px 16px;
+    text-decoration: none;
+}
+
+.links p:hover{
+    background-color:  rgb(59, 59, 59);
+}
+
+.center {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.center h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 60px;
+    margin-left: 80px;
+}
+.center h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 44px;
+}
+.center div button{
+    border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  border: none;
+  padding: 20px;
+}
+.center div button:hover{
+    background: rgb(49, 49, 49);
+}
+.about {
+    position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 20px;
+}
